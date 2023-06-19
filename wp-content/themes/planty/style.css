@@ -32,10 +32,82 @@ html.js {
 }
 
 /* ************ Header - Menu Primary************** */
-.header-titles-wrapper {
+img.custom-logo {
   max-width: 192px;
-  max-height: 18px;
 }
+
+#site-header.header-footer-group {
+  height: 80px;
+}
+
+.header-inner.section-inner {
+padding-top: 0;
+padding-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+#site-header.header-footer-group {
+  padding-top: 40px;
+}
+}
+
+#site-header.header-footer-group a.custom-logo-link {
+padding-left: 37px !important;
+}
+
+#site-header.header-footer-group a {
+ color: black;
+ font-size: 16px;
+ text-decoration: none;
+ padding : 0 61px;
+}
+
+.primary-menu a {
+ display: inline-block;
+ height: 80px;
+ line-height: 80px;
+ padding: 0 20px;
+ text-decoration: none;
+ font-size: 16px;
+}
+
+.header-inner.section-inner {
+ width: 100%;
+ top: 0%;
+}
+
+.primary-menu #menu-item-52 a {
+ background-color: #DC9F96;
+ color: white !important;  
+}
+
+/* Style du lien au survol */
+.primary-menu a:hover {
+ text-decoration: underline !important;
+}
+
+/* Style du lien actif */
+.primary-menu .current-menu-item a {
+ font-weight: 700 !important;
+ font-size: 13px !important;
+}
+
+.singular .entry-header {
+padding: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ************ Footer - Menu !!!!!!!!************** */
 
