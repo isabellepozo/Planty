@@ -1,0 +1,107 @@
+/* 
+Theme Name: Planty
+Theme URI: https://openclassrooms.com/
+Description: Thème Planty basé sur le thème TwentyTwenty
+Author: Planty
+Author URI: https://openclassrooms.com/
+Template: twentytwenty
+Version: 2.2
+Licence : GNU General Public License v2 or later
+License URI: http://www.gnu.org/licences/gpl-2.0.html
+Tags: boisson, energisante, plantes
+Text Domain: planty
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+/* Fonction pour désactiver les titres pages et articles */
+.hidetitle .entry-title {
+  display:none;
+  }
+
+body * {
+   font-family: 'syne'!important;
+}
+
+html.js {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+/* ************ Header - Menu Primary************** */
+
+
+/* ************ Footer - Menu !!!!!!!!************** */
+
+.reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper, .reduced-spacing.footer-top-hidden #site-footer {
+   border-top-width: 0 !important;
+}
+
+.center-link {
+   display: block;
+   text-align: center;
+   color: black;
+   font-size: 16px;
+   padding-top: 20px;
+   padding-bottom: 21px;
+ }
+
+ #site-footer.header-footer-group {
+   padding-bottom: 0;
+   padding-top: 0;
+ }
+
+ /* *****Accueil et CSS Gutenberg***** */
+ .custom-width {
+  width: 1680px;
+}
+
+.custom-radius {
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.wp-block-group.accueil-rangee.is-content-justification-center.is-nowrap.is-layout-flex.wp-container-6 {
+  max-width: 40rem !important;
+  margin-bottom: 0;
+}
+
+.wp-block-group.accueil-rangee.is-content-justification-center.is-nowrap.is-layout-flex.wp-container-7 {
+  max-width: 40rem !important;
+  margin-top: 0;
+}
+
+.wp-block-columns.is-layout-flex.wp-container-45 {
+  padding: 0;
+  margin: 0;
+}
+
+.wp-block-columns.is-layout-flex.wp-container-43 {
+  padding: 0;
+}
+
+
+
+ /* *****Nous rencontrer et CSS Gutenberg***** */
+ .typographie-nom-equipe {
+  font-size: 20px;
+  font-weight: 700;
+ }
+
+ .has-text-align-center.typographie-nom-equipe {
+  margin: 0;
+ }
+
+ 
+/* *****Commander et CSS Gutenberg***** */
+ .wp-block-spacer.ligne-separatrice {
+  border-top: 1px solid white;
+ }
+
+ .wp-block-group__inner-container {
+  width: 860px !important;
+ }
+
