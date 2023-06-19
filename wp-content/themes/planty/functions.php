@@ -15,3 +15,5 @@ function ala_hidetitle_class($classes) {
     return $classes;
     }
     add_filter('post_class', 'ala_hidetitle_class');
+
+    

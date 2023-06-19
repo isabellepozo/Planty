@@ -32,7 +32,10 @@ html.js {
 }
 
 /* ************ Header - Menu Primary************** */
-
+.header-titles-wrapper {
+  max-width: 192px;
+  max-height: 18px;
+}
 
 /* ************ Footer - Menu !!!!!!!!************** */
 
