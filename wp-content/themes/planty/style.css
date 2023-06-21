@@ -46,9 +46,9 @@ padding-bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {
-#site-header.header-footer-group {
-  padding-top: 40px;
-}
+  #site-header.header-footer-group {
+    padding-top: 40px;
+  }
 }
 
 #site-header.header-footer-group a.custom-logo-link {
@@ -96,14 +96,7 @@ padding-left: 37px !important;
 padding: 0 !important;
 }
 
-
-
-
-
-
-
 /* ************ Footer - Menu !!!!!!!!************** */
-
 .reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper, .reduced-spacing.footer-top-hidden #site-footer {
    border-top-width: 0 !important;
 }
@@ -153,7 +146,7 @@ padding: 0 !important;
 
 
 
- /* *****Nous rencontrer et CSS Gutenberg***** */
+ /* *****Nous rencontrer***** */
  .typographie-nom-equipe {
   font-size: 20px;
   font-weight: 700;
@@ -162,6 +155,15 @@ padding: 0 !important;
  .has-text-align-center.typographie-nom-equipe {
   margin: 0;
  }
+        /* Formulaire de contact */
+        .wpcf7-spinner {
+          width: 0 !important;
+          margin: 0 !important;
+        }
+
+        .bouton-envoyer{
+          text-align: center;
+        }
 
  
 /* *****Commander et CSS Gutenberg***** */
