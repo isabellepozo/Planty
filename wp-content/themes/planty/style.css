@@ -132,6 +132,10 @@ padding: 0 !important;
           text-align: center;
         }
 
+        .message {
+          height: 200px;
+        }
+
  
 /* *****Commander et CSS Gutenberg***** */
  .wp-block-spacer.ligne-separatrice {
