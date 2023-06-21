@@ -96,7 +96,7 @@ padding-left: 37px !important;
 padding: 0 !important;
 }
 
-/* ************ Footer - Menu !!!!!!!!************** */
+/* ************ Footer - Menu ************** */
 .reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper, .reduced-spacing.footer-top-hidden #site-footer {
    border-top-width: 0 !important;
 }
@@ -115,46 +115,13 @@ padding: 0 !important;
    padding-top: 0;
  }
 
- /* *****Accueil et CSS Gutenberg***** */
- .custom-width {
-  width: 1680px;
-}
 
-.custom-radius {
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
-
-.wp-block-group.accueil-rangee.is-content-justification-center.is-nowrap.is-layout-flex.wp-container-6 {
-  max-width: 40rem !important;
-  margin-bottom: 0;
-}
-
-.wp-block-group.accueil-rangee.is-content-justification-center.is-nowrap.is-layout-flex.wp-container-7 {
-  max-width: 40rem !important;
-  margin-top: 0;
-}
-
-.wp-block-columns.is-layout-flex.wp-container-45 {
-  padding: 0;
-  margin: 0;
-}
-
-.wp-block-columns.is-layout-flex.wp-container-43 {
-  padding: 0;
-}
+ /* *****Accueil***** */
 
 
 
  /* *****Nous rencontrer***** */
- .typographie-nom-equipe {
-  font-size: 20px;
-  font-weight: 700;
- }
-
- .has-text-align-center.typographie-nom-equipe {
-  margin: 0;
- }
+ 
         /* Formulaire de contact */
         .wpcf7-spinner {
           width: 0 !important;
