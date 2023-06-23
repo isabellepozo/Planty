@@ -137,12 +137,6 @@ padding: 0 !important;
         }
 
  
-/* *****Commander et CSS Gutenberg***** */
- .wp-block-spacer.ligne-separatrice {
-  border-top: 1px solid white;
- }
-
- .wp-block-group__inner-container {
-  width: 860px !important;
- }
-
+/* ***** Page Commander ***** */
+ /* Styling for the quantity buttons */
+ 
