@@ -199,12 +199,13 @@ padding: 0 !important;
   padding: 5px; 
   font-size: 14px; 
   margin-left: 10px; 
-  background-color: #DC9F96;
+  background-color: #e0b9b4;
   border-radius: 5px;
 }
 
 .wpcf7-form-control.has-spinner.wpcf7-submit:hover {
   background-color: #c02e44;
+  text-decoration: none;
 }
 
 
