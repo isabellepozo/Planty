@@ -163,10 +163,10 @@ padding: 0 !important;
   background-color: #DC9F96;
   cursor: pointer;
   font-weight: bold;
-  font-weight: normal; /* Retirer le style en gras */
+  font-weight: normal; 
   display: flex;
-  align-items: center; /* Centrer verticalement */
-  justify-content: center; /* Centrer horizontalement */
+  align-items: center;
+  justify-content: center; 
 }
 
 .plus-button {
@@ -179,8 +179,9 @@ padding: 0 !important;
 
 .plus-button:hover,
 .minus-button:hover {
-  background-color: #DC9F96;
+  background-color: #c02e44;
 }
+
 .wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel{
   width: 45px; 
   height: 56px; 
@@ -195,9 +196,15 @@ padding: 0 !important;
 .wpcf7-form-control.has-spinner.wpcf7-submit {
   width: 100px;
   height: 56px; 
-  border: 1px solid #cccccc;
   padding: 5px; 
   font-size: 14px; 
   margin-left: 10px; 
+  background-color: #DC9F96;
+  border-radius: 5px;
 }
+
+.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+  background-color: #c02e44;
+}
+
 
