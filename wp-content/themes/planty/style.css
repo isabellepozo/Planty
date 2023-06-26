@@ -131,14 +131,10 @@ padding: 0 !important;
           height: 200px;
         }
 
+
  
 /* ***** Page Commander ***** */
- /* Styling for the quantity buttons */
-
- .parfum {
-  flex-direction: row;
-  display: flex;
- }
+ /* Style des boutons quantité */
 
  .quantity-field {
   display: flex;
@@ -148,7 +144,7 @@ padding: 0 !important;
 .button-container {
   display: flex;
   align-items: center;
-  margin-left: 10px; /* Ajustez la marge selon vos besoins */
+  margin-left: 0;
 }
 
 .plus-minus-container {
@@ -159,18 +155,49 @@ padding: 0 !important;
 .plus-button,
 .minus-button {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 31px;
+  height: 28px;
   line-height: 20px;
   text-align: center;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  color :white ;
+  background-color: #DC9F96;
   cursor: pointer;
   font-weight: bold;
+  font-weight: normal; /* Retirer le style en gras */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+}
+
+.plus-button {
+  border-radius: 0 5px 0 0;
+}
+
+.minus-button {
+  border-radius: 0 0 5px 0;
 }
 
 .plus-button:hover,
 .minus-button:hover {
-  background-color: #f1f1f1;
+  background-color: #DC9F96;
+}
+.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel{
+  width: 45px; 
+  height: 56px; 
+  padding: 0;
+  font-size: 16px; 
+  border-radius: 5px 0 0 5px;
+  line-height: 56px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit {
+  width: 100px;
+  height: 56px; 
+  border: 1px solid #cccccc;
+  padding: 5px; 
+  font-size: 14px; 
+  margin-left: 10px; 
 }
 
