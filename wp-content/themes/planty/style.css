@@ -115,11 +115,6 @@ padding: 0 !important;
    padding-top: 0;
  }
 
-
- /* ***** Page "Accueil" ***** */
-
-
-
  /* ***** Page "Nous rencontrer" ***** */
  
         /* Formulaire de contact */
@@ -139,4 +134,43 @@ padding: 0 !important;
  
 /* ***** Page Commander ***** */
  /* Styling for the quantity buttons */
- 
+
+ .parfum {
+  flex-direction: row;
+  display: flex;
+ }
+
+ .quantity-field {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Ajustez la marge selon vos besoins */
+}
+
+.plus-minus-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.plus-button,
+.minus-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.plus-button:hover,
+.minus-button:hover {
+  background-color: #f1f1f1;
+}
+
