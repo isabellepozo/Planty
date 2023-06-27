@@ -208,4 +208,58 @@ padding: 0 !important;
   text-decoration: none;
 }
 
+ /* Formulaire Informations */
+.form-columns {
+  display: flex;
+}
+
+.form-column-left,
+.form-column-right {
+  flex: 1;
+}
+
+.form-column-separator {
+  width: 1px;
+  margin-top: 30px;
+  background-color: #ccc;
+  margin: 0 20px;
+  padding-top: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #DC9F96;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #BF745C;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+}
+
+.uacf7-form-978 h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.uacf7-form-978 .wpcf7-form-control.wpcf7-text {
+  margin-bottom: 25px;
+}
+
+
+
 

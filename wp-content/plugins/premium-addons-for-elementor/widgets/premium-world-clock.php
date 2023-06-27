@@ -1720,7 +1720,7 @@ class Premium_World_Clock extends Widget_Base {
 		$this->add_responsive_control(
 			'date_margin',
 			array(
-				'label'      => __( 'margin', 'premium-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'premium-addons-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', 'custom' ),
 				'selectors'  => array(

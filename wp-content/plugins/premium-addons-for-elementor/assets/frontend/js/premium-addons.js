@@ -2637,8 +2637,8 @@
                     var generatedColor = null,
                         fontSize = $(term).find('.premium-tcloud-term-link').css('font-size').replace('px', '');
 
-
-                    fontSize = parseFloat(fontSize) + ($(term).find('.premium-tcloud-term-link').data('weight') * widgetSettings.fsize_scale.size);
+                    if (widgetSettings.fsize_scale.size > 0)
+                        fontSize = parseFloat(fontSize) + ($(term).find('.premium-tcloud-term-link').data('weight') * widgetSettings.fsize_scale.size);
 
                     if ('custom' !== colorScheme) {
                         generatedColor = _this.genRandomColor(colorScheme, 'grid');
@@ -2662,7 +2662,9 @@
                     }
 
                     $(term).get(0).style.setProperty("--tag-color", generatedColor);
-                    $(term).find('.premium-tcloud-term-link').css('font-size', Math.ceil(fontSize) + 'px');
+
+                    if (widgetSettings.fsize_scale.size > 0)
+                        $(term).find('.premium-tcloud-term-link').css('font-size', Math.ceil(fontSize) + 'px');
 
 
                     if ('ribbon' === widgetSettings.words_order) {

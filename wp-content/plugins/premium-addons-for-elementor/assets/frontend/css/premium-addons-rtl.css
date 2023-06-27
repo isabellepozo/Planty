@@ -2979,6 +2979,10 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+.wpcf7-span.is-focused input {
+    outline: none;
+}
 /************ Premium Countdown ************/
 /*******************************************/
 .premium-countdown {
@@ -7290,6 +7294,10 @@ body.premium-scroll-disabled {
     font-size: 50px;
 }
 
+.pa-rec-not-icon-wrap img {
+    display: block;
+  }
+
 .pa-rec-not-icon-wrap .premium-not-icon {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -10581,6 +10589,36 @@ ul.premium-person-social-list {
     top: 0;
     right: 0;
 }
+
+.premium-videobox-layout2 .premium-videobox-column {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .premium-videobox-layout2 .premium-videobox-column:first-child .premium-video-box-trigger {
+    height: 100%;
+  }
+
+  .premium-videobox-layout2 .premium-videobox-column:nth-child(2) {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: -webkit-calc(100% - var(--pa-first-column-width));
+    width: calc(100% - var(--pa-first-column-width));
+  }
+
+  .premium-videobox-layout2 .premium-videobox-column:nth-child(2) .premium-video-box-container {
+    height: auto !important;
+  }
+
 /************ Premium Vertical Scroll ************/
 /*************************************************/
 .premium-vscroll-inner {

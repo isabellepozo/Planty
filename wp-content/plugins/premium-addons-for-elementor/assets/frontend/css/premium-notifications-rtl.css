@@ -21,6 +21,10 @@
     font-size: 50px;
 }
 
+.pa-rec-not-icon-wrap img {
+    display: block;
+  }
+
 .pa-rec-not-icon-wrap .premium-not-icon {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;

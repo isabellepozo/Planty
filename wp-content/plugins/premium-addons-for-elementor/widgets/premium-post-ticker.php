@@ -3031,7 +3031,7 @@ class Premium_Post_Ticker extends Widget_Base {
 
 		if ( 'stock' === $source ) {
 
-			$api_key = $settings['api_key'];
+			$api_key = apply_filters( 'pa_stock_api', $settings['api_key'] );
 
 			if ( empty( $api_key ) ) {
 
@@ -3103,7 +3103,7 @@ class Premium_Post_Ticker extends Widget_Base {
 					return;
 				}
 
-				$expire_time = HOUR_IN_SECONDS * $settings['reload'];
+				$expire_time = HOUR_IN_SECONDS * apply_filters( 'pa_ticker_reload', $settings['reload'] );
 
 				$api_handler::delete_existing_transient();
 
@@ -3115,7 +3115,7 @@ class Premium_Post_Ticker extends Widget_Base {
 			}
 		} elseif ( 'gold' === $source ) {
 
-			$api_key = $settings['gold_api_key'];
+			$api_key = apply_filters( 'pa_gold_api', $settings['gold_api_key'] );
 
 			if ( empty( $api_key ) ) {
 
@@ -3162,7 +3162,7 @@ class Premium_Post_Ticker extends Widget_Base {
 					return;
 				}
 
-				$expire_time = HOUR_IN_SECONDS * $settings['gold_reload'];
+				$expire_time = HOUR_IN_SECONDS * apply_filters( 'pa_ticker_reload', $settings['gold_reload'] );
 
 				$api_handler::delete_existing_transient();
 
@@ -3547,7 +3547,11 @@ class Premium_Post_Ticker extends Widget_Base {
 
 						<?php if ( $show_price ) : ?>
 							<span class="premium-post-ticker__price" title="Price
-							<?php  if ( ! $is_stock_element ) { echo 'Per Ounce'; } ?> " aria-label="<?php echo esc_attr__( $price, 'premium-addons-for-elementor' ); ?>"><?php echo $price; ?></span>
+							<?php
+							if ( ! $is_stock_element ) {
+								echo 'Per Ounce'; }
+							?>
+							 " aria-label="<?php echo esc_attr__( $price, 'premium-addons-for-elementor' ); ?>"><?php echo $price; ?></span>
 						<?php endif; ?>
 
 						<?php if ( $show_change ) : ?>

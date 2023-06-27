@@ -140,7 +140,7 @@
                 //When click outside, close all boxes.
                 $("body").on("click", function (event) {
 
-                    var postsContent = ".pa-rec-posts-container, .pa-rec-posts-container *, .pa-rec-not-icon-wrap, .pa-rec-not-icon-wrap *";
+                    var postsContent = ".pa-rec-posts-container, .pa-rec-posts-container *, .pa-rec-not-icon-wrap, .pa-rec-not-icon-wrap *, .premium-tabs-nav-list-item";
 
                     if (!$(event.target).is($(postsContent))) {
                         _this.hideBox(boxWidth, direction);
