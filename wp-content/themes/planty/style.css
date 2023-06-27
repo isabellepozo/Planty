@@ -81,9 +81,8 @@ img.custom-logo {
  color: white !important;  
 }
 
-/* Style du lien au survol */
-.primary-menu a:hover {
- text-decoration: underline !important;
+.primary-menu #menu-item-52 a:hover {
+  background-color: #c02e44;
 }
 
 /* Style du lien actif */

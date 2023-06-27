@@ -16,4 +16,24 @@ function ala_hidetitle_class($classes) {
     }
     add_filter('post_class', 'ala_hidetitle_class');
 
+/*hook*/
+function planty_add_admin_link_to_menu( $items, $args ) {
+    // Vérifier si l'utilisateur est connecté
+    if ( is_user_logged_in() ) {
+        // Créer le lien "Admin"
+        $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
+
+        // Trouver la position du lien "Nous rencontrer" dans les éléments du menu
+        $rencontrer_position = strpos( $items, 'Nous rencontrer' );
+
+        // Insérer le lien "Admin" après le lien "Nous rencontrer"
+        $items = substr_replace( $items, $admin_link, $rencontrer_position + strlen('Nous rencontrer'), 0 );
+    }
+    return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'planty_add_admin_link_to_menu', 10, 2 );
+
+?>
+
     
