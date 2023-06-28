@@ -85,6 +85,11 @@ img.custom-logo {
   background-color: #c02e44;
 }
 
+.primary-menu #menu-item-53 a:hover {
+  font-weight: 700;
+  font-size: 13px;
+}
+
 /* Style du lien actif */
 .primary-menu .current-menu-item a {
  font-weight: 700 !important;
