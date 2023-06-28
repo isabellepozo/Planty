@@ -274,6 +274,43 @@ label {
   text-align: center;
 }
 
+/* Media queries pour les versions tablette et mobile */
+@media only screen and (max-width: 950px) {
+  .form-columns {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .quantity-field {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .quantity-field.mobile-margin {
+    margin-bottom: 100px;
+  }
+
+@media only screen and (max-width: 767px) {
+  .form-columns {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form-column-separator {
+    display: none;
+  }
+
+  .form-column-left,
+  .form-column-right {
+    width: 100%;
+  }
+
+  .quantity-field.mobile-margin {
+    margin-bottom: 100px;
+  }
+}
+
 
 
 
