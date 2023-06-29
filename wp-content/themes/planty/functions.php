@@ -6,7 +6,7 @@ function theme_enqueue_styles()
     wp_enqueue_style('parent-style', get_template_directory_uri() .'/style.css');
 }
 
-// Fonction pour désactiver les titres pages
+/**Hook pour désactiver les titres pages**/
 function ala_hidetitle_class($classes) {
     if ( is_page() ) :
     $classes[] = 'hidetitle';
@@ -16,7 +16,8 @@ function ala_hidetitle_class($classes) {
     }
     add_filter('post_class', 'ala_hidetitle_class');
 
-/*hook*/
+
+/************Hook pour ajouter le lien Admin*************/
 function planty_add_admin_link_to_menu( $items, $args ) {
     // Vérifier si l'utilisateur est connecté
     if ( is_user_logged_in() ) {
