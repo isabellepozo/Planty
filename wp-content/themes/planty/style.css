@@ -101,6 +101,19 @@ img.custom-logo {
   padding: 0 !important;
 }
 
+
+
+.menu-wrapper .menu-item {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.menu-wrapper {
+  justify-content: flex-start;
+}
+
 /* ************ Footer - Menu ************** */
 .reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper, .reduced-spacing.footer-top-hidden #site-footer {
   border-top-width: 0 !important;
