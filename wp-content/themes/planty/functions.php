@@ -7,6 +7,7 @@ function theme_enqueue_styles()
 }
 
 /**Hook pour désactiver les titres pages**/
+add_filter('post_class', 'ala_hidetitle_class');
 function ala_hidetitle_class($classes) {
     if ( is_page() ) :
     $classes[] = 'hidetitle';
@@ -14,10 +15,11 @@ function ala_hidetitle_class($classes) {
     endif;
     return $classes;
     }
-    add_filter('post_class', 'ala_hidetitle_class');
+    
 
 
 /************Hook pour ajouter le lien Admin*************/
+add_filter( 'wp_nav_menu_items', 'planty_add_admin_link_to_menu', 10, 2 );
 function planty_add_admin_link_to_menu( $items, $args ) {
     // Vérifier si l'utilisateur est connecté
     if ( is_user_logged_in() ) {
@@ -33,7 +35,6 @@ function planty_add_admin_link_to_menu( $items, $args ) {
     return $items;
 }
 
-add_filter( 'wp_nav_menu_items', 'planty_add_admin_link_to_menu', 10, 2 );
 
 
 ?>
