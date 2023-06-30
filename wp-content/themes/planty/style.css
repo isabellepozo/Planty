@@ -217,6 +217,7 @@ height : 237px;
 .wpcf7-form-control.has-spinner.wpcf7-submit {
   
   height: 56px; 
+  width: 100px;
   padding: 5px; 
   font-size: 14px; 
   margin-left: 10px; 
