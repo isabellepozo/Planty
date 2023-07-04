@@ -129,6 +129,21 @@ class WPR_Templates_Data {
 					'priority' => 3,
 				],
 			],
+			'woo-auto-parts' => [
+				'v1' => [
+					'name' => 'Auto Parts Store',
+					'pages' => 'home,shop,single-product,compare,mini-cart,about,contact,blog,mega-menu',
+					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
+					'tags' => 'auto parts store shop shopping woo-commerce woocommerce estore ecommerce product online eshopping market car parts automobile accessories bike parts car repair tire shop tools shop phone parts',
+					'theme-builder' => true,
+					'woo-builder' => true,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'pro',
+					'expert' => $is_expert ? 'free' : 'expert',
+					'label' => 'new',
+					'priority' => 4,
+				],
+			],
 			'personal-blog' => [
 				'v1' => [
 					'name' => 'Personal Blog',
@@ -484,7 +499,7 @@ class WPR_Templates_Data {
 					'name' => 'Car Repair',
 					'pages' => 'home,about,contact,services,team,',
 					'plugins' => '{}',
-					'tags' => 'free car repair cars car care car detailing car repair repair car service vehicle',
+					'tags' => 'free car repair cars car care car detailing car repair repair car service vehicle auto vehicle',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -780,7 +795,7 @@ class WPR_Templates_Data {
 					'name' => 'Carwash',
 					'pages' => 'home,about,services,contact,',
 					'plugins' => '{}',
-					'tags' => 'free vehicle car wash cleaning painting service maintenance care bike motorcycle detailing',
+					'tags' => 'free vehicle car wash cleaning painting service maintenance care bike motorcycle detailing auto',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -864,23 +879,167 @@ class WPR_Templates_Data {
 		$is_pro_active = wpr_fs()->can_use_premium_code() && defined('WPR_ADDONS_PRO_VERSION');
 		
 		return [
-			// 'woo1' => [
+			// 'woo-v1' => [
 			// 	'name' => 'Food',
 			// 	'pages' => ['home',],
 			// 	'preview' => ['home',],
 			// 	'price' => $is_pro_active ? 'free' : 'pro',
 			// ],
-			'wooshop-v1' => [
-				'name' => 'Woo Shop',
-				'pages' => ['home','shop','about','contact'],
-				'preview' => ['home','shop','about','contact'],
+			'digital-marketing-agency-v3' => [
+				'name' => 'Digital Marketing Agency',
+				'pages' => ['home','services','portfolio','blog','about','contact'],
+				'preview' => ['home','services','portfolio','blog','about','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'nature-v1' => [
+				'name' => 'Nature',
+				'pages' => ['home','about','services','projects','contact'],
+				'preview' => ['home','about','services','projects','contact'],
 				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'digital-marketing-agency-v2' => [
+				'name' => 'Digital Marketing Agency',
+				'pages' => ['home','seo','social','web','email','blog','about','team','contact','pricing1','pricing2','pricing3','casestudy'],
+				'preview' => ['home','search-engine-optimization','social-media-marketing','web-design','email-marketing','blog','about-us','our-team','contact','price-pack-v1','price-pack-v2','price-pack-v3','case-study'],
+				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'fashion-v2' => [
 				'name' => 'Fashion',
 				'pages' => ['home','home-v2','home-v3','shop-v1','shop-v2','shop-v3','blog','about-v1','about-v2','contact-v1','contact-v2','contact-v3',],
 				'preview' => ['home','home-v2','home-v3','shop-fashion-v2','shop-v2','shop-grid-list-view','blog','about','about-v2','contact','contact-v2','contact-v3',],
 				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'digitalagency-v3' => [
+				'name' => 'Digital Agency',
+				'pages' => ['home','about','blog','contact'],
+				'preview' => ['home','about','blog','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'realestate-v2' => [
+				'name' => 'Real Estate',
+				'pages' => ['home','about','services','property','details','agents','blog','contact'],
+				'preview' => ['home','about','services','property','property-details','agents','blog','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'realestate-v1' => [
+				'name' => 'Real Estate',
+				'pages' => ['home','properties','about','services','faq','contact'],
+				'preview' => ['home','properties','about','services','faq','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'construction-v3' => [
+				'name' => 'Construction',
+				'pages' => ['home','home-v2','about','services','shop','blog','gallery','contact'],
+				'preview' => ['home','home-v2','about','services','shop','blog','gallery','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'woo-auto-parts-v1' => [
+				'name' => 'Auto Parts Store',
+				'pages' => ['home','shop','about','blog','contact'],
+				'preview' => ['home','shop','about','blog','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'home-care-v1' => [
+				'name' => 'Home Care',
+				'pages' => ['home','about','appointment','services','blog','contact'],
+				'preview' => ['home','about','appointment','services','blog','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'fintech-v1' => [
+				'name' => 'Fintech Startup',
+				'pages' => ['home','about','services','blog','contact'],
+				'preview' => ['home','about','services','blog','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'fooddelivery-v1' => [
+				'name' => 'Food Delivery',
+				'pages' => ['home','services','blog','faq','contact'],
+				'preview' => ['home','services','blog','faq','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'architecture-v2' => [
+				'name' => 'Architecture',
+				'pages' => ['home','about','projects','services','team','pricing','faq','contact'],
+				'preview' => ['home','about','blog-architecture-v2','services','team','pricing','faq','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'architecture-v1' => [
+				'name' => 'Architecture',
+				'pages' => ['home','about','portfolio','services','faq','contact'],
+				'preview' => ['home','about','portfolio','services','faq','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'drone-v1' => [
+				'name' => 'Drone Project',
+				'pages' => ['home','about','gallery','services','contact'],
+				'preview' => ['/','about-us','gallery','services','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'medical-v1' => [
+				'name' => 'Medical',
+				'pages' => ['home','about','services','doctors','contact'],
+				'preview' => ['home','about','services','doctors','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'lawyer-v1' => [
+				'name' => 'Lawyer',
+				'pages' => ['home','practice','faq','reviews','attorney','contact'],
+				'preview' => ['home','practice','faq','reviews','attorney','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'skincare-v1' => [
+				'name' => 'Skin Care',
+				'pages' => ['home','about','services','procedures','gallery','pricing','contact'],
+				'preview' => ['home','about','services','procedures','gallery','pricing','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'travel-v1' => [
+				'name' => 'Travel Blogger',
+				'pages' => ['home','about','stories','contact'],
+				'preview' => ['home','about','stories','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'pet-care-v1' => [
+				'name' => 'Pet Care',
+				'pages' => ['home','about','services','reviews','contact'],
+				'preview' => ['home','about','services','reviews','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'car-repair-v1' => [
+				'name' => 'Car Repair',
+				'pages' => ['home','about','contact','services','team'],
+				'preview' => ['home','about','contact','services','team'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'business-consulting-v1' => [
+				'name' => 'Business Consulting',
+				'pages' => ['home','about','blog','contact','services','contact','faq','history','pricing','team',],
+				'preview' => ['home','about','blog','contact','services','contact','faq','history','pricing','team',],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'travel-blog-v1' => [
+				'name' => 'Travel Blog',
+				'pages' => ['home','home-v1','home-v2','about','contact'],
+				'preview' => ['home','home-v2','home-v3','about','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'yoga-v1' => [
+				'name' => 'Yoga',
+				'pages' => ['home','about','classes','testimonials','contact'],
+				'preview' => ['home','about','classes','testimonials','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'ecommerce-v1' => [
+				'name' => 'Ecommerce',
+				'pages' => ['home','shop','blog','about','contact'],
+				'preview' => ['home','shop','blog','about','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'wooshop-v1' => [
+				'name' => 'Woo Shop',
+				'pages' => ['home','shop','about','contact'],
+				'preview' => ['home','shop','about','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
 			],
 			'fashion-v1' => [
 				'name' => 'Fashion',
@@ -905,6 +1064,12 @@ class WPR_Templates_Data {
 				'pages' => ['home','shop-v1','shop-v2','about','contact'],
 				'preview' => ['home','shop-furniture-shop-v1','shop-v2','about','contact'],
 				'price' => $is_pro_active ? 'free' : 'pro',
+			],
+			'restaurant-v1' => [
+				'name' => 'Restaurant',
+				'pages' => ['home','about','gallery','menu','contact'],
+				'preview' => ['home','about','gallery','menu','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
 			],
 			'grocery-store-v1' => [
 				'name' => 'Grocery Store',
@@ -966,12 +1131,6 @@ class WPR_Templates_Data {
 				'preview' => ['home','about','services','pricing','contact'],
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
-			'digitalagency-v3' => [
-				'name' => 'Digital Agency',
-				'pages' => ['home','about','blog','contact'],
-				'preview' => ['home','about','blog','contact'],
-				'price' => $is_pro_active ? 'free' : 'free',
-			],
 			// 'ittech-v2' => [ // Problem with links
 			// 	'name' => 'IT Tech',
 			// 	'pages' => ['home','about','services','pricing','faq','contact'],
@@ -989,12 +1148,6 @@ class WPR_Templates_Data {
 				'pages' => ['home','about','services','projects','pricing','contact','faq'],
 				'preview' => ['home','about','services','projects','pricing','contact','faq'],
 				'price' => $is_pro_active ? 'free' : 'free',
-			],
-			'digital-marketing-agency-v2' => [
-				'name' => 'Digital Marketing Agency',
-				'pages' => ['home','seo','social','web','email','blog','about','team','contact','pricing1','pricing2','pricing3','casestudy'],
-				'preview' => ['home','search-engine-optimization','social-media-marketing','web-design','email-marketing','blog','about-us','our-team','contact','price-pack-v1','price-pack-v2','price-pack-v3','case-study'],
-				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'photographer-v1' => [
 				'name' => 'Photographer Dark',
@@ -1026,6 +1179,12 @@ class WPR_Templates_Data {
 				'preview' => ['home','about','gallery','classes','pricing','review','trainers','blog','contact','coming-soon'],
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
+			'wedding-v1' => [
+				'name' => 'Wedding',
+				'pages' => ['home','about','services','blog','gallery','contact'],
+				'preview' => ['home','about','services','blog','gallery','rsvp'],
+				'price' => $is_pro_active ? 'free' : 'free',
+			],
 			'portfolio-v1' => [
 				'name' => 'Portfolio/CV',
 				'pages' => ['home','about','portfolio','contact'],
@@ -1038,11 +1197,11 @@ class WPR_Templates_Data {
 				'preview' => ['home','menu','about','offer','gallery','contact'],
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
-			'digital-marketing-agency-v3' => [
-				'name' => 'Digital Marketing Agency',
-				'pages' => ['home','services','portfolio','blog','about','contact'],
-				'preview' => ['home','services','portfolio','blog','about','contact'],
-				'price' => $is_pro_active ? 'free' : 'pro',
+			'winebar-v1' => [
+				'name' => 'Wine Bar',
+				'pages' => ['home','story','wines','dishes','events','contact'],
+				'preview' => ['home','our-story','wines','dishes','event','contact'],
+				'price' => $is_pro_active ? 'free' : 'free',
 			],
 			'charity-v1' => [
 				'name' => 'Charity',
@@ -1054,12 +1213,6 @@ class WPR_Templates_Data {
 				'name' => 'Carwash',
 				'pages' => ['home','about','services','contact'],
 				'preview' => ['home','about','services','contact'],
-				'price' => $is_pro_active ? 'free' : 'free',
-			],
-			'nature-v1' => [
-				'name' => 'Nature',
-				'pages' => ['home','about','services','projects','contact'],
-				'preview' => ['home','about','services','projects','contact'],
 				'price' => $is_pro_active ? 'free' : 'free',
 			],
 		];

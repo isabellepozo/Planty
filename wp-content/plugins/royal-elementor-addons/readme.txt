@@ -1,7 +1,7 @@
 === Royal Elementor Addons and Templates ===
 Contributors: WP Royal, rubeushagrid13, cyberpinky, elementoraddonswpr, ggedenidze1982
 Tags: elementor, elementor templates, elementor addons, widgets for elementor, elementor widgets, elementor mega menu, elementor woocommerce builder, theme builder, header footer builder, elementor post grid, elementor product grid, addons for elementor
-Stable tag: 1.3.69
+Stable tag: 1.3.70
 Requires at least: 5.0
 Tested up to: 6.2.2
 Requires PHP: 5.6
@@ -397,6 +397,10 @@ memory_limit 256M or more
 post_max_size 64M
 
 == Changelog ==
+= Royal Elementor Addons v1.3.70 - 2023-07-01 =
+* ADDED: Auto Parts Store Elementor Templates Kit - [**Auto Parts Store**](https://demosites.royal-elementor-addons.com/woo-auto-parts-v1/?ref=rea-wpo-pp-details-tab).
+* FIXED: Minor Bugs.
+
 = Royal Elementor Addons v1.3.69 - 2023-06-08 =
 * ADDED: Home Care v1 Elementor Templates Kit - [**Home Care v1**](https://demosites.royal-elementor-addons.com/home-care-v1/?ref=rea-wpo-pp-details-tab).
 * ADDED: Fintech v1 Elementor Templates Kit - [**Fintech v1**](https://demosites.royal-elementor-addons.com/fintech-v1/?ref=rea-wpo-pp-details-tab).
